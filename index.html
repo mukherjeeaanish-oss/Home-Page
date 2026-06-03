@@ -86,6 +86,7 @@
             font-weight: 700;
             background: var(--accent-glow);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 1px;
         }
@@ -94,8 +95,8 @@
         .sidebar {
             position: fixed;
             top: 0;
-            left: -320px;
-            width: 320px;
+            left: -350px;
+            width: 350px; /* Slightly wider to accommodate longer names */
             height: 100%;
             background: var(--bg-secondary);
             z-index: 200;
@@ -103,6 +104,7 @@
             padding: 30px 20px;
             box-shadow: 10px 0 30px rgba(0,0,0,0.5);
             border-right: 1px solid rgba(255, 255, 255, 0.05);
+            overflow-y: auto;
         }
 
         .sidebar.active {
@@ -200,6 +202,7 @@
             margin-bottom: 15px;
             background: var(--accent-glow);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -512,7 +515,7 @@
         }
 
         .accordion-item.open .accordion-content {
-            max-height: 200px; /* arbitrary large enough height */
+            max-height: 200px;
             padding: 14px;
             transition: max-height 0.3s cubic-bezier(1, 0, 1, 0), padding 0.3s ease;
         }
@@ -631,6 +634,7 @@
             margin-bottom: 15px;
             background: var(--accent-glow);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -704,15 +708,15 @@
             <button class="close-btn" id="closeSidebar"><i class="fas fa-times"></i></button>
         </div>
         <ul class="toc-list">
-            <li class="toc-item toc-social"><a href="#" class="maintenance-trigger"><i class="fas fa-hashtag"></i> Social Media Services</a></li>
-            <li class="toc-item toc-solutions"><a href="#" class="maintenance-trigger"><i class="fas fa-brain"></i> AI Solutions</a></li>
-            <li class="toc-item toc-chatbots"><a href="#" class="maintenance-trigger"><i class="fas fa-comments"></i> AI Chatbots</a></li>
-            <li class="toc-item toc-whatsapp"><a href="#" class="maintenance-trigger"><i class="fas fa-phone-alt"></i> WhatsApp Business API</a></li>
-            <li class="toc-item toc-hr"><a href="#" class="maintenance-trigger"><i class="fas fa-users-cog"></i> HR Payroll & Management</a></li>
-            <li class="toc-item toc-compliance"><a href="#" class="maintenance-trigger"><i class="fas fa-shield-alt"></i> Compliance & Regulatory</a></li>
-            <li class="toc-item toc-analytics"><a href="#" class="maintenance-trigger"><i class="fas fa-chart-pie"></i> Data Analytics & Intel</a></li>
-            <li class="toc-item toc-training"><a href="#" class="maintenance-trigger"><i class="fas fa-graduation-cap"></i> Training & Upskilling</a></li>
-            <li class="toc-item toc-outsourcing"><a href="#" class="maintenance-trigger"><i class="fas fa-handshake"></i> Outsourcing & Partners</a></li>
+            <li class="toc-item toc-social"><a href="https://mukherjeeaanish-oss.github.io/Services/" target="_blank" rel="noopener noreferrer"><i class="fas fa-hashtag"></i> Social Media Services</a></li>
+            <li class="toc-item toc-solutions"><a href="https://mukherjeeaanish-oss.github.io/AI-Solutions/" target="_blank" rel="noopener noreferrer"><i class="fas fa-brain"></i> AI Solutions</a></li>
+            <li class="toc-item toc-chatbots"><a href="https://mukherjeeaanish-oss.github.io/AI-Chatbots/" target="_blank" rel="noopener noreferrer"><i class="fas fa-comments"></i> AI Chatbots</a></li>
+            <li class="toc-item toc-whatsapp"><a href="https://mukherjeeaanish-oss.github.io/WhatsApp-Business-API/" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone-alt"></i> WhatsApp Business API</a></li>
+            <li class="toc-item toc-hr"><a href="https://mukherjeeaanish-oss.github.io/HR-Payroll/" target="_blank" rel="noopener noreferrer"><i class="fas fa-users-cog"></i> HR Payroll & Management</a></li>
+            <li class="toc-item toc-compliance"><a href="https://mukherjeeaanish-oss.github.io/Complaince/" target="_blank" rel="noopener noreferrer"><i class="fas fa-shield-alt"></i> Compliance & Regulatory</a></li>
+            <li class="toc-item toc-analytics"><a href="https://mukherjeeaanish-oss.github.io/Data-Analytics/" target="_blank" rel="noopener noreferrer"><i class="fas fa-chart-pie"></i> Data Analytics & Intelligence</a></li>
+            <li class="toc-item toc-training"><a href="https://mukherjeeaanish-oss.github.io/Training/" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Training & Upskilling</a></li>
+            <li class="toc-item toc-outsourcing"><a href="https://mukherjeeaanish-oss.github.io/Outsourcing/" target="_blank" rel="noopener noreferrer"><i class="fas fa-handshake"></i> Outsourcing & Partnerships</a></li>
         </ul>
     </nav>
 
@@ -723,15 +727,15 @@
 
     <main class="main-container">
         <div class="tabs-menu">
-            <button class="tab-btn active" data-tab="social">Social Media</button>
+            <button class="tab-btn active" data-tab="social">Social Media Services</button>
             <button class="tab-btn" data-tab="solutions">AI Solutions</button>
             <button class="tab-btn" data-tab="chatbots">AI Chatbots</button>
-            <button class="tab-btn" data-tab="whatsapp">WhatsApp API</button>
-            <button class="tab-btn" data-tab="hr">HR & Payroll</button>
-            <button class="tab-btn" data-tab="compliance">Compliance</button>
-            <button class="tab-btn" data-tab="analytics">Analytics & Intel</button>
-            <button class="tab-btn" data-tab="training">Upskilling</button>
-            <button class="tab-btn" data-tab="outsourcing">Outsourcing</button>
+            <button class="tab-btn" data-tab="whatsapp">WhatsApp Business API</button>
+            <button class="tab-btn" data-tab="hr">HR Payroll & Management</button>
+            <button class="tab-btn" data-tab="compliance">Compliance & Regulatory</button>
+            <button class="tab-btn" data-tab="analytics">Data Analytics & Intelligence</button>
+            <button class="tab-btn" data-tab="training">Training & Upskilling</button>
+            <button class="tab-btn" data-tab="outsourcing">Outsourcing & Partnerships</button>
         </div>
 
         <div class="tab-content active" id="social">
